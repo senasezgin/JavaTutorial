@@ -1,3 +1,5 @@
+package JavaTutorial;
+
 import java.util.Scanner;
 
 public class NotOrtalama {
@@ -36,7 +38,7 @@ public class NotOrtalama {
 
         boolean noldu = sonuc >= 60;
 
-        String ders = noldu ? "Geçdti5" : "Kaldı";
+        String ders = noldu ? "Geçtiniz " : "Kaldınız";
         System.out.println(ders);
 
 
