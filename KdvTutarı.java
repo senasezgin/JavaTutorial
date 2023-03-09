@@ -17,9 +17,6 @@ public class KdvTutarı {
         System.out.println(kdvliFiyat);
 
 
-
-
-
         /* double kdvTutar = tutar * kdvOran;
         double kdvliTutar = tutar+ kdvTutar;
 
