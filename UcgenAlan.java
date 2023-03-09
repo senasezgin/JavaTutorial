@@ -2,7 +2,7 @@ package JavaTutorial;
 
 import java.util.Scanner;
 
-public class Hipotenus {
+public class UcgenAlan {
     public static void main(String[] args) {
         int a, b, c;
         double u, alan;
