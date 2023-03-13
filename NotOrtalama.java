@@ -30,16 +30,14 @@ public class NotOrtalama {
         System.out.println("Muzik notunu gir: ");
         muzik = scanner.nextInt();
 
-        int toplam = (mat + fizik + kimya + tarih + turkce + muzik );
-        double sonuc = toplam / 6.0;
-        System.out.println("Ortalama: " + sonuc);
 
 
 
-        boolean noldu = sonuc >= 60;
+
+        /*boolean noldu = sonuc >= 60;
 
         String ders = noldu ? "Geçtiniz " : "Kaldınız";
-        System.out.println(ders);
+        System.out.println(ders);*/
 
 
 
