@@ -26,51 +26,50 @@ public class UcakBileti {
 
         if (yolculukTipi==1){
             if (yas<12){
-                yasIndirimi = normalTutar*0.5;
-                indirimliTutar = normalTutar - yasIndirimi;
-                System.out.print("Toplam Tutar: " + indirimliTutar);
+                fiyat = normalTutar - (normalTutar*0.5);
+                System.out.print("Toplam Tutar: " +fiyat);
+
             } else if (yas>=12 && yas<24 ) {
-                yasIndirimi = normalTutar*0.10;
-                indirimliTutar = normalTutar-yasIndirimi;
-                System.out.print("Toplam Tutar: " + indirimliTutar);
+                fiyat = normalTutar-(normalTutar*0.10);
+                System.out.print("Toplam Tutar: " +fiyat);
+
             } else if (yas>=65) {
-                yasIndirimi = normalTutar*0.30;
-                indirimliTutar = normalTutar-yasIndirimi;
-                System.out.print("Toplam Tutar: " + indirimliTutar);
+                fiyat = normalTutar-(normalTutar*0.30);
+                System.out.print("Toplam Tutar: " +fiyat);
+
             } else {
-                System.out.print("Toplam Tutar: " + normalTutar);
+                fiyat=normalTutar;
+                System.out.print("Toplam Tutar: " +fiyat);
             }
+
 
         } else if (yolculukTipi==2) {
             if (yas<12){
-                yasIndirimi = normalTutar*0.5;
-                indirimliTutar = normalTutar - yasIndirimi;
-                tipIndirimi = indirimliTutar*0.20;
-                fiyat = 2*(indirimliTutar-tipIndirimi);
-                System.out.print("Toplam Tutar: " + fiyat);
+                indirimliTutar = normalTutar - (normalTutar*0.5);
+                fiyat = 2*(indirimliTutar-(indirimliTutar*0.20));
+                System.out.print("Toplam Tutar: " +fiyat);
             } else if (yas>=12 && yas<=24 ) {
-                yasIndirimi = normalTutar*0.10;
-                indirimliTutar = normalTutar-yasIndirimi;
-                tipIndirimi = indirimliTutar*0.20;
-                fiyat = 2*(indirimliTutar-tipIndirimi);
-                System.out.print("Toplam Tutar: " + fiyat );
+                indirimliTutar = normalTutar - (normalTutar*0.1);
+                fiyat = 2*(indirimliTutar-(indirimliTutar*0.20));
+                System.out.print("Toplam Tutar: " +fiyat);
+
+
             } else if (yas>=65) {
-                yasIndirimi = normalTutar*0.30;
-                indirimliTutar = normalTutar-yasIndirimi;
-                tipIndirimi = indirimliTutar*0.20;
-                fiyat = 2*(indirimliTutar-tipIndirimi);
-                System.out.print("Toplam Tutar: " + fiyat );
+                indirimliTutar = normalTutar - (normalTutar*0.3);
+                fiyat = 2*(indirimliTutar-(indirimliTutar*0.20));
+                System.out.print("Toplam Tutar: " +fiyat);
+
             } else {
                 tipIndirimi = normalTutar*0.20;
                 fiyat = 2*(normalTutar-tipIndirimi);
-
                 System.out.print("Toplam Tutar: " +fiyat);
+
             }
 
         }
 
         else {
-           System.out.print("Yanlış tip girdiniz ");
+            System.out.print("Yanlış tip girdiniz ");
 
         }
 
