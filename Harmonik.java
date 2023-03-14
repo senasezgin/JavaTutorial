@@ -9,7 +9,7 @@ public class Harmonik {
         int n = input.nextInt();
         double result = 0;
         for(int i=1; i<=n; i++){
-            result +=(1/i);
+            result +=(1.0/i);
         }
         System.out.print(result);
     }
