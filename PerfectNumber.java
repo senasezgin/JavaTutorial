@@ -11,7 +11,6 @@ public class PerfectNumber {
 
         for (int i=1; i<=n; i++)
             if (n%i==0) {
-                ;
                 toplam = +i;
             }
         if (toplam==n){
