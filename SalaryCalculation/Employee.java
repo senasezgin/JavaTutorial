@@ -57,6 +57,7 @@ public class Employee {
         System.out.println(" Zamlı maaş " + (this.salary + bonus() + raiseSalary() - tax()));
 
     }
+    
 
 
 
