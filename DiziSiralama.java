@@ -8,7 +8,7 @@ public class DiziSiralama {
         Scanner input = new Scanner(System.in);
         int count =0;
 
-        System.out.print("Dizinin boyutunu giriniz: ");
+        System.out.print("Dizinin boyustunu giriniz: ");
         int n = input.nextInt();
         int[] list = new int[n];
 
